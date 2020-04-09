@@ -13,7 +13,7 @@ func main() {
 func KadaneAlgorithm(arr []int) int {
 	maxSoFar, maxHere := arr[0], arr[0]
 
-	for i := 0; i < len(arr); i++ {
+	for i := 1; i < len(arr); i++ {
 
 		if arr[i] < maxHere+arr[i] {
 			maxHere = maxHere + arr[i]
